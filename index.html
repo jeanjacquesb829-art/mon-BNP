@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>BNP BANQUE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginPage" class="login-container">
+    <h1>BNP Bank</h1>
+
+    <input type="text" id="client" placeholder="Numéro client">
+    <input type="password" id="code" placeholder="Code secret">
+
+    <button onclick="login()">Accéder</button>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="hidden">
+
+    <div class="sidebar">
+        <h2>Kohrogo</h2>
+        <ul>
+            <li>Comptes</li>
+            <li>Virements</li>
+            <li>Dépenses</li>
+            <li>Offres</li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <div class="top">
+            <h1>Mon Compte </h1>
+            <h2 class="solde">12 960 455 €</h2>
+            <p class="blocked">⚠ Bloqué pour sanction pénale</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">Dépenses: 885 €</div>
+            <div class="card">Recettes: 1200 €</div>
+        </div>
+
+        <h3>Transactions</h3>
+        <table id="transactions">
+            <tr>
+                <th>Date</th>
+                <th>Libellé</th>
+                <th>Montant</th>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
